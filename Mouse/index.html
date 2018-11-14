@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>擦除效果globalCompositeOpeartion</title>
+<style>
+*{margin:0;padding:0;}
+body{background:#dddddd;}
+#canvas{background:url(http://img0.imgtn.bdimg.com/it/u=73478915,3193482595&fm=21&gp=0.jpg) no-repeat;background-size:100% 100%;margin:50px auto;display:block;}
+
+</style>
+</head>
+
+<body>
+	<canvas id="canvas" width="750" height="500"></canvas>
+
+<script>
+var canvas = document.getElementById("canvas");
+var ctx=canvas.getContext("2d");
+var drawing = false;
+var radius = 30;      //线宽
+
+ctx.fillStyle = "#00aeff";
+ctx.fillRect(0,0,canvas.width,canvas.height);
+ctx.fill();
+
+ctx.lineWidth = radius;
+ctx.lineCap = "round";
+ctx.lineJoin = "round";
+ctx.globalCompositeOperation = "destination-out";
+
+
+function getBoundingClientRect(x,y){
+	var box = canvas.getBoundingClientRect();    //获取canvas的距离浏览器视窗的上下左右距离
+	return {x:x-box.left,
+			y:y-box.top
+	}
+}
+
+canvas.onmousedown = function(e){
+	var first = getBoundingClientRect(e.clientX,e.clientY);
+	ctx.save();
+	ctx.beginPath();
+	ctx.moveTo(first.x,first.y);
+	drawing = true;
+}
+
+canvas.onmousemove = function(e){
+	if(drawing){
+		var move = getBoundingClientRect(e.clientX,e.clientY);
+		ctx.save();
+		ctx.lineTo(move.x,move.y);
+		ctx.stroke()
+		ctx.restore()
+	}
+}
+
+canvas.onmouseup = function(){
+	drawing = false;
+}
+
+</script>
+</body>
+</html>

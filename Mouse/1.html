@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="jquery/jquery-3.1.1.min.js"></script>
+		<link rel="stylesheet" href="css/mouse.css" />
+		<script type="text/javascript" src="js/mouse.js" ></script>
+		<title>经典打地鼠游戏</title>
+	</head>
+	<body>
+		<div id="all">
+		<div id="content">
+			<form id="form1" name="form1" style="margin-top: auto 0;">
+                
+                <input type="text" name="score" id="score" size="5">
+                
+                <input type="text" name="remtime" id="remtime" size="5">
+            </form>
+			<div id="btn">
+			<input type="button"  id="start" onclick="startGame()"/>
+			<input type="button"  id="message" onclick="helpMessage()"/>
+			<input type="button"  id="exit" onclick="exit()"/>
+			<input type="button"  id="back" onclick="backMenu()"/>
+			<input type="button" onclick="playOrPause()" id="playbtn"></input>
+			<input type="button" onclick="GameOver()" id="endbtn"></input>
+			</div>			
+			<div id="area">
+			<div id="d0" >
+				<div id="m0" ></div>				
+			</div>
+			<div id="d1">
+				<div id="m1" ></div>
+			</div>
+			<div id="d2">
+				<div id="m2" ></div>				
+			</div>
+			<div id="d3">
+				<div id="m3" ></div>		
+			</div>
+			<div id="d4">
+				<div id="m4" ></div>
+			</div>
+			<div id="d5">
+				<div id="m5" ></div>				
+			</div>
+			<div id="d6">
+				<div id="m6" ></div>				
+			</div>
+			<div id="d7">
+				<div id="m7"></div>				
+			</div>
+			<div id="d8">
+				<div id="m8" ></div>
+			</div>
+			</div>			
+			
+		</div>
+			<div id="endPhoto">
+				<div id="pointarea">
+				<span id="point"></span>
+				</div>
+				<input type="button" id="back2" onclick="backMenu()" />
+				<input type="button" id="restart" onclick="startGame()" />
+			</div>			
+				<audio id="audio" src="audio/game_music.ogg" autoplay="autoplay" loop="loop"  ></audio>
+				<img id="Img" src="images/bt001.png" />
+				</div>
+	</body>
+</html>

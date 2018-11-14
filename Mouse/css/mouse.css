@@ -1,0 +1,335 @@
+			/*游戏主界面样式*/
+			
+			#content{	
+				z-index: 2;
+				position: fixed;
+				top: 10%;
+				left: 10%;
+				height: 550px;
+				width: 750px;
+				background: url(../images/bg_canvas.png);
+				cursor: none;
+			}
+			/*锤子样式*/
+ 			#Img{ 
+ 				z-index: 3;
+ 				position:absolute; 
+ 				top:0px; 
+ 				left:0px;
+ 				}
+			
+			/*按钮和区域样式*/
+			#btn{
+				position: absolute;
+				z-index: 2;
+			}
+			#area{
+				position: absolute;
+				z-index: 1;
+			}
+			/*按钮样式*/
+			#start{
+				background: none;
+				cursor: none;
+				border: hidden;
+				display: block;
+				background-image: url(../img/start1.png);
+				width: 158px;
+				height: 53px;
+				margin-left: 500px;
+				margin-top: 230px;
+			}
+			/*游戏说明按钮*/
+			#message{
+				background: none;
+				cursor: none;
+				border: hidden;
+				display: block;
+				background-image: url(../img/message1.png);
+				width: 156px;
+				height: 54px;
+				margin-left: 500px;
+				margin-top: 50px;
+			}
+			/*游戏退出按钮*/
+			#exit{
+				background: none;
+				cursor: none;
+				border: hidden;
+				display: block;
+				background-image: url(../img/exit1.png);
+				width: 156px;
+				height: 54px;
+				margin-left: 500px;
+				margin-top: 50px;
+			}
+			/*返回主界面按钮*/
+			#back{
+				border: none;
+				background: none;
+				cursor: none;
+				background-image: url(../img/back.png);
+				width: 153px;
+				height: 53px;
+				display: none;
+				margin-left: 320px;
+				margin-top: 400px;
+			}
+			/*结束 游戏界面中的返回主界面按钮*/
+			#back2{
+				background: none;
+				border: hidden;
+				background-image: url(../img/back.png);
+				width: 153px;
+				height: 53px;
+				margin-left: 200px;
+				margin-top:355px ;
+			}
+			/*重新开始按钮*/
+			#restart{
+				background: none;
+				border: hidden;
+				background-image: url(../img/restart.png);
+				width: 158px;
+				height: 53px;
+				margin-left: 33px;
+
+			}
+			
+			
+			#score{
+				text-align: center;
+				border: none;
+				width: 100px;
+				display: none;
+				position: absolute;
+				left: 230px;
+				top: 196px;
+				
+			}
+			#remtime{
+				
+				text-align: center;
+				border: none;
+				display: none;
+				position: absolute;
+				width: 110px;
+				left: 485px;
+				top: 196px;
+				
+			}
+			/*结束界面*/
+			#endPhoto{
+				
+				display: none;
+				position: absolute;
+				top: 10%;
+				left: 10%;
+				height: 550px;
+				width: 750px;
+				background: url(../images/bg_gameover.png);
+			}
+			/*最终得分区域*/
+			#pointarea{
+				color: white;
+				font-size: 40px;
+				font-family: 黑体;
+				position: absolute;
+				left: 400px;
+				top: 295px;
+			}
+			/*音乐播放按钮*/
+			#playbtn{
+				cursor: none;
+				background: none;
+				position: absolute;
+				left: 600px;
+				top: 40px;
+				width: 60px;
+				height: 56px;
+				background-image: url(../img/musicplaying.png)  ;
+				border: hidden;
+			}
+			/*左上角结束按钮*/
+			#endbtn{
+				display: none;
+				cursor: none;
+				background: none;
+				position: absolute;
+				left: 80px;
+				top: 40px;
+				width: 60px;
+				height: 56px;
+				background-image: url(../img/pause.png)  ;
+				border: hidden;
+			}
+			/*冒出老鼠的区域*/
+			#d0{
+				
+				position: absolute;
+				left: 140px;
+				top: 160px;
+				width: 100px;
+				height: 100px;
+				overflow: hidden;
+			}
+			#d1{
+				position: absolute;
+				left: 330px;
+				top: 160px;
+				width: 100px;
+				height: 100px;
+				overflow: hidden;
+			}
+			#d2{		
+				
+						
+				position: absolute;
+				left: 530px;
+				top: 170px;
+				width: 100px;
+				height: 100px;
+				overflow: hidden;
+			}
+			#d3{
+				position: absolute;
+				left: 115px;
+				top: 250px;
+				width: 100px;
+				height: 100px;
+				overflow: hidden;
+			}
+			#d4{
+				position: absolute;
+				left: 335px;
+				top: 255px;
+				width: 100px;
+				height: 100px;
+				overflow: hidden;
+			}
+			#d5{
+				position: absolute;
+				left: 535px;
+				top: 260px;
+				width: 100px;
+				height: 100px;
+				overflow: hidden;
+			}
+			#d6{
+				position: absolute;
+				left: 110px;
+				top: 350px;
+				width: 100px;
+				height: 100px;
+				overflow: hidden;
+			}
+			#d7{
+				
+				position: absolute;
+				left: 335px;
+				top: 355px;
+				width: 100px;
+				height: 100px;
+				overflow: hidden;
+			}
+			#d8{
+				position: absolute;
+				left: 555px;
+				top: 370px;
+				width: 100px;
+				height: 100px;
+				overflow: hidden;
+			}
+			/*老鼠样式*/
+			#m0 {
+				position: absolute;
+				margin-top: 150px;
+				display: block;
+				background: url(../img/mouse1.png);
+				width: 100px;
+				height: 100px;
+			}
+			#m1 {
+				position: absolute;
+				margin-top: 150px;
+				display: block;
+				background: url(../img/mouse1.png);
+				width: 100px;
+				height: 100px;
+			}
+			#m2 {
+				position: absolute;
+				margin-top: 150px;
+				display: block;
+				background: url(../img/mouse1.png);
+				width: 100px;
+				height: 100px;
+			}
+			#m3 {
+				margin-top: 150px;
+				position: absolute;
+				display: block;
+				background: url(../img/mouse1.png);
+				width: 100px;
+				height: 100px;
+			}
+			#m4 {
+				margin-top: 150px;
+				position: absolute;
+				display: block;
+				background: url(../img/mouse1.png);
+				width: 100px;
+				height: 100px;
+			}
+			#m5 {
+				margin-top: 150px;
+				position: absolute;
+				display: block;
+				background: url(../img/mouse1.png);
+				width: 100px;
+				height: 100px;
+			}
+			#m6 {
+				margin-top: 150px;
+				position: absolute;
+				display: block;
+				background: url(../img/mouse1.png);
+				width: 100px;
+				height: 100px;
+			}
+			#m7{
+				margin-top: 150px;
+				position: absolute;
+				display: block;
+				background: url(../img/mouse1.png);
+				width: 100px;
+				height: 100px;
+			}
+			#m8 {
+				margin-top: 150px;
+				position: absolute;
+				display: block;
+				background: url(../img/mouse1.png);
+				width: 100px;
+				height: 100px;
+			}			
+			/*按钮切换背景样式*/
+			#start:hover{
+				background-image: url(../img/start2.png);
+			}
+			#message:hover{
+				background-image: url(../img/message2.png);
+			}
+			#exit:hover{
+				background-image: url(../img/exit2.png);
+			}
+			#back:hover{
+				background-image: url(../img/back1.png);
+			}
+			#back2:hover{
+				background-image: url(../img/back1.png);
+			}
+			#restart:hover{
+				background-image: url(../img/restart2.png);
+			}
+			
